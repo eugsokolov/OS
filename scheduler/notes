@@ -1,0 +1,7 @@
+write a bunch of simulated system calls
+set up signals to come every 10 millisec (SIGVTALARM)
+write schedule to pick next best task
+
+stripped out sleep and wakeupcalls
+
+

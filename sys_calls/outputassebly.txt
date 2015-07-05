@@ -1,0 +1,33 @@
+eugene@eugene-Lenovo-G570:~/Documents/cooper_union/ece357/problemset8$ strace ./a.out 
+execve("./a.out", ["./a.out"], [/* 39 vars */]) = 0
+write(1, "Hello World\n", 12Hello World
+)           = 12
+_exit(0)   
+
+eugene@eugene-Lenovo-G570:~/Documents/cooper_union/ece357/problemset8$ strace ./a.out 
+execve("./a.out", ["./a.out"], [/* 39 vars */]) = 0
+write(1, "Hello World\n", 12Hello World
+)           = 12
+--- SIGSEGV (Segmentation fault) @ 0 (0) ---
++++ killed by SIGSEGV (core dumped) +++
+Segmentation fault (core dumped)
+
+eugene@eugene-Lenovo-G570:~/Documents/cooper_union/ece357/problemset8$ strace ./a.out 
+execve("./a.out", ["./a.out"], [/* 39 vars */]) = 0
+write(1, "Hello World\n", 12Hello World
+)           = 12
+_exit(1)  
+
+eugene@eugene-Lenovo-G570:~/Documents/cooper_union/ece357/problemset8$ strace ./a.out 
+execve("./a.out", ["./a.out"], [/* 39 vars */]) = 0
+write(1, 0x3e8, 12)                     = -1 EFAULT (Bad address)
+_exit(0)                                = ?
+
+eugene@eugene-Lenovo-G570:~/Documents/cooper_union/ece357/problemset8$ strace ./a.out 
+execve("./a.out", ["./a.out"], [/* 39 vars */]) = 0
+syscall_4000(0x1, 0, 0xc, 0, 0, 0, 0xffffffda, 0x7b, 0x7b, 0, 0, 0xfa0, 0x80480c9, 0x73, 0x200296, 0xbff56cd0, 0x7b, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) = -1 (errno 38)
+_exit(0)                                = ?
+
+
+
+
